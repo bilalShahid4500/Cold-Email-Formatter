@@ -1,0 +1,232 @@
+{
+  "lastUpdated": "2025-08-15T13:34:56.998Z",
+  "totalEmails": 10,
+  "successfulEmails": 6,
+  "failedEmails": 2,
+  "pendingEmails": 2,
+  "logs": [
+    {
+      "id": "email_1755191389369_r6p0e0udf",
+      "timestamp": "2025-08-14T17:09:49.369Z",
+      "status": "success",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "ttrz juwf wmko eqpq",
+        "to": "bilal.shahid4500@gmail.com",
+        "cc": "",
+        "subject": "Testing",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Cold Email</title>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }\n        .content { margin: 20px 0; }\n        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"header\">\n            <h2>Cold Email Template</h2>\n        </div>\n        \n        <div class=\"content\">\n            <p>Dear [Recipient Name],</p>\n            \n            <p>I hope this email finds you well. I came across your profile and was impressed by your work in [their field/company].</p>\n            \n            <p>I believe there might be a great opportunity for collaboration between us. [Your value proposition or specific reason for reaching out].</p>\n            \n            <p>Would you be interested in a brief 15-minute call to discuss how we could potentially work together?</p>\n            \n            <p>Looking forward to hearing from you.</p>\n        </div>\n        \n        <div class=\"footer\">\n            <p>Best regards,<br>\n            [Your Name]<br>\n            [Your Company]<br>\n            [Your Contact Information]</p>\n        </div>\n    </div>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      },
+      "messageId": "<a94856fb-c235-8f65-6358-813fb907cda1@gmail.com>"
+    },
+    {
+      "id": "email_1755191409167_3dluffnsl",
+      "timestamp": "2025-08-14T17:10:09.167Z",
+      "status": "success",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "ttrz juwf wmko eqpq",
+        "to": "bilal.shahid4500@gmail.com",
+        "cc": "abdulrehmankhalid59@gmail.com",
+        "subject": "Testing",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Cold Email</title>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }\n        .content { margin: 20px 0; }\n        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"header\">\n            <h2>Cold Email Template</h2>\n        </div>\n        \n        <div class=\"content\">\n            <p>Dear [Recipient Name],</p>\n            \n            <p>I hope this email finds you well. I came across your profile and was impressed by your work in [their field/company].</p>\n            \n            <p>I believe there might be a great opportunity for collaboration between us. [Your value proposition or specific reason for reaching out].</p>\n            \n            <p>Would you be interested in a brief 15-minute call to discuss how we could potentially work together?</p>\n            \n            <p>Looking forward to hearing from you.</p>\n        </div>\n        \n        <div class=\"footer\">\n            <p>Best regards,<br>\n            [Your Name]<br>\n            [Your Company]<br>\n            [Your Contact Information]</p>\n        </div>\n    </div>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      },
+      "messageId": "<2bd3df4d-3f07-80d4-e4b4-56c86192a959@gmail.com>"
+    },
+    {
+      "id": "email_1755191529384_3z5s7rvu0",
+      "timestamp": "2025-08-14T17:12:09.384Z",
+      "status": "pending",
+      "emailData": {
+        "emailType": "website",
+        "from": "bilal@devdive.net",
+        "password": "Pakistan@123",
+        "to": "bilal.shahid4500@gmail.com",
+        "cc": "abdulrehmankhalid59@gmail.com",
+        "subject": "Testing",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Cold Email</title>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }\n        .content { margin: 20px 0; }\n        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"header\">\n            <h2>Cold Email Template</h2>\n        </div>\n        \n        <div class=\"content\">\n            <p>Dear [Recipient Name],</p>\n            \n            <p>I hope this email finds you well. I came across your profile and was impressed by your work in [their field/company].</p>\n            \n            <p>I believe there might be a great opportunity for collaboration between us. [Your value proposition or specific reason for reaching out].</p>\n            \n            <p>Would you be interested in a brief 15-minute call to discuss how we could potentially work together?</p>\n            \n            <p>Looking forward to hearing from you.</p>\n        </div>\n        \n        <div class=\"footer\">\n            <p>Best regards,<br>\n            [Your Name]<br>\n            [Your Company]<br>\n            [Your Contact Information]</p>\n        </div>\n    </div>\n</body>\n</html>",
+        "domain": "mail.devdive.net",
+        "smtpPort": "463"
+      },
+      "smtpConfig": {
+        "host": "mail.devdive.net",
+        "port": 463,
+        "secure": false,
+        "emailType": "website"
+      }
+    },
+    {
+      "id": "email_1755191604727_cb5oepy68",
+      "timestamp": "2025-08-14T17:13:24.727Z",
+      "status": "failed",
+      "emailData": {
+        "emailType": "website",
+        "from": "bilal@devdive.net",
+        "password": "Pakistan@123",
+        "to": "bilal.shahid4500@gmail.com",
+        "cc": "abdulrehmankhalid59@gmail.com",
+        "subject": "Testing",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Cold Email</title>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }\n        .content { margin: 20px 0; }\n        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"header\">\n            <h2>Cold Email Template</h2>\n        </div>\n        \n        <div class=\"content\">\n            <p>Dear [Recipient Name],</p>\n            \n            <p>I hope this email finds you well. I came across your profile and was impressed by your work in [their field/company].</p>\n            \n            <p>I believe there might be a great opportunity for collaboration between us. [Your value proposition or specific reason for reaching out].</p>\n            \n            <p>Would you be interested in a brief 15-minute call to discuss how we could potentially work together?</p>\n            \n            <p>Looking forward to hearing from you.</p>\n        </div>\n        \n        <div class=\"footer\">\n            <p>Best regards,<br>\n            [Your Name]<br>\n            [Your Company]<br>\n            [Your Contact Information]</p>\n        </div>\n    </div>\n</body>\n</html>",
+        "domain": "mail.devdive.net",
+        "smtpPort": "463"
+      },
+      "smtpConfig": {
+        "host": "mail.devdive.net",
+        "port": 463,
+        "secure": false,
+        "emailType": "website"
+      },
+      "error": "connect ETIMEDOUT 185.151.28.68:463"
+    },
+    {
+      "id": "email_1755191662839_9l82b905d",
+      "timestamp": "2025-08-14T17:14:22.839Z",
+      "status": "success",
+      "emailData": {
+        "emailType": "website",
+        "from": "bilal@devdive.net",
+        "password": "Pakistan@123",
+        "to": "bilal.shahid4500@gmail.com",
+        "cc": "",
+        "subject": "Testing",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Cold Email</title>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }\n        .content { margin: 20px 0; }\n        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"header\">\n            <h2>Cold Email Template</h2>\n        </div>\n        \n        <div class=\"content\">\n            <p>Dear [Recipient Name],</p>\n            \n            <p>I hope this email finds you well. I came across your profile and was impressed by your work in [their field/company].</p>\n            \n            <p>I believe there might be a great opportunity for collaboration between us. [Your value proposition or specific reason for reaching out].</p>\n            \n            <p>Would you be interested in a brief 15-minute call to discuss how we could potentially work together?</p>\n            \n            <p>Looking forward to hearing from you.</p>\n        </div>\n        \n        <div class=\"footer\">\n            <p>Best regards,<br>\n            [Your Name]<br>\n            [Your Company]<br>\n            [Your Contact Information]</p>\n        </div>\n    </div>\n</body>\n</html>",
+        "domain": "mail.devdive.net",
+        "smtpPort": "465"
+      },
+      "smtpConfig": {
+        "host": "mail.devdive.net",
+        "port": 465,
+        "secure": true,
+        "emailType": "website"
+      },
+      "messageId": "<5b1e6852-3abc-e64d-4f38-32a4135e81c0@devdive.net>"
+    },
+    {
+      "id": "email_1755192561203_5378e096e4cc829e",
+      "timestamp": "2025-08-14T17:29:21.203Z",
+      "status": "success",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "ttrz juwf wmko eqpq",
+        "to": "bilal.shahid4500@gmail.com",
+        "subject": "Testing",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" c\"width=device-width, initial-scale=1.0\">\n    <title>Cold Email</title>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }\n        .content { margin: 20px 0; }\n        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"header\">\n            <h2>Cold Email Template</h2>\n        </div>\n        \n        <div class=\"content\">\n            <p>Dear [Recipient Name],</p>\n            \n            <p>I hope this email finds you well. I came across your profile and was impressed by your work in [their field/company].</p>\n            \n            <p>I believe there might be a great opportunity for collaboration between us. [Your value proposition or specific reason for reaching out].</p>\n            \n            <p>Would you be interested in a brief 15-minute call to discuss how we could potentially work together?</p>\n            \n            <p>Looking forward to hearing from you.</p>\n        </div>\n        \n        <div class=\"footer\">\n            <p>Best regards,<br>\n            [Your Name]<br>\n            [Your Company]<br>\n            [Your Contact Information]</p>\n        </div>\n    </div>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      },
+      "messageId": "<1a58aba5-9392-b050-f087-51d29d425e07@gmail.com>"
+    },
+    {
+      "id": "email_1755260601561_81af1b121fb2fd1c",
+      "timestamp": "2025-08-15T12:23:21.561Z",
+      "status": "success",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "ttrz juwf wmko eqpq",
+        "to": "bilal@devdive.net",
+        "subject": "Cut Dev Costs by 70%—Without Hiring a Single Developer",
+        "content": "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" c\"width=device-width\">\n  <meta name=\"color-scheme\" c\"light\">\n  <meta name=\"supported-color-schemes\" c\"light\">\n  <title>Just 10 Minutes</title>\n  <style>\n    :root {\n        color-scheme: light;\n        supported-color-schemes: light;\n    } \n\n    @media only screen and (max-width: 620px) {\n      .wrapper { width: 100% !important; padding: 16px !important; }\n      .hero-text { font-size: 26px !important; line-height: 34px !important; }\n      .content { font-size: 15px !important; }\n      .cta-btn { width: 100% !important; display: block !important; }\n    }\n  </style>\n</head>\n<body style=\"margin:0; padding:0; background-color:#fffff !important; font-family: 'Segoe UI', Roboto, Arial, sans-serif;\">\n  <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background-color:#ffffff !important;\">\n    <tr>\n      <td align=\"center\" style=\"padding: 32px 12px;\">\n        <!-- Main Container -->\n        <table class=\"wrapper\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" role=\"presentation\"\n               style=\"background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.08);\">\n          <!-- Logo -->\n          <tr>\n            <td align=\"center\" style=\"padding: 28px 24px; background-color:#ffffff !important;\">\n              <img src=\"https://devdive.net/img/devdive_logo_purple.png\" alt=\"DevDive\"\n                   style=\"display:block; width:160px; max-width:80%; height:auto;\">\n            </td>\n          </tr>\n          <!-- Hero Section -->\n          <tr>\n            <td align=\"center\" style=\"background: linear-gradient(135deg, #5B40D2, #7B5FFF); padding: 40px 24px;border-radius:10px; color:#ffffff !important;\">\n              <div style=\"font-size:34px; font-weight:900; color:#ffffff !important; line-height:1.3;\" class=\"hero-text\">\n                From Costly to <span style=\"color:#ffcc4d !important;\">Cost-Smart</span><br> <em>Your Dev Team Is Waiting</em>\n              </div>\n              <div style=\"font-size:16px; color:#ffffff !important; margin-top:12px;\">\n                No hiring headaches. No missed deadlines. Just top-tier tech talent at a fraction of the cost.\n              </div>\n            </td>\n          </tr>\n          <!-- Body -->\n          <tr>\n            <td style=\"padding: 32px; color:#243b4a; background-color:#ffffff !important;\">\n              <div style=\"font-size:16px; margin-bottom:12px;\">Hi <strong>Michael</strong>,</div>\n              <div style=\"font-size:15px; color:#4a5963; line-height:1.6; margin-bottom:20px;\">\n                <p>I was really impressed by <strong>Ascendant Technologies</strong>' 30+ years of serving the Tri-State area with expert managed IT, cybersecurity, cloud, and custom IT strategies. Your strength lies not just in your experience, but in your deeply personalized, 24/7 support and your ability to craft industry-specific solutions across sectors like healthcare, finance, manufacturing, and education.</p>\n                <p>I’m Bilal, CTO of <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none; font-weight:700\">Devdive</a>, a fellow business owner leading a team that brings together eight years of experience in design, development, AI integration, cybersecurity, and deployment—all delivered with attention to quality, scalability, and efficiency. We help agencies avoid the cost and headaches of hiring—making top-tier tech talent instantly accessible, without skyrocketing budgets. No hiring headaches. <strong>No missed deadlines. Just results—at a fraction of the cost.</strong></p>\n                <!-- <p>From one entrepreneur to another—both of us are builders who believe in sustainable, high-impact growth. That’s why <strong>DevDive</strong> isn’t just an agency—we’re your <strong>affordable, in-house-caliber dev team</strong>, ready to scale your digital offerings with excellence and precision. </p> -->\n              </div>\n              <!-- Highlight Box -->\n              <div style=\"background:#f8f6ff !important; border-left:4px solid #7B5FFF; border-radius:6px; padding:16px; margin-bottom:20px;\">\n                <strong>Partnering with DevDive means you can:</strong>\n                <ul style=\"margin:10px 0 0 18px; padding:0; color:#4a5963; line-height:1.6;\">\n                  <li>Deliver high-quality client portals, automation tools, analytics dashboards, or mobile apps—without recruiting or training new staff</li>\n                  <li>Seamlessly integrate AI-powered insights, CRM enhancements, or workflow automation into your managed services offerings</li>\n                  <li>Support overflow during peak demand, urgent client projects, or new service launches while your core team focuses on operations</li>\n                  <li>Provide expert development support on demand, preserving your reputation for reliability and responsiveness</li>\n                </ul>\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                If you're open to a quick 10-minute call, I’d love to explore how DevDive can align with your vision and help you scale even smarter. Even if now isn’t the right time, I’d still welcome a connection—businesses grow through relationships, shared ideas, and mutual trust.\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                Looking forward to connecting.\n              </div>\n\n              <!-- Footer -->\n              <div style=\"border-top:1px solid #eee; margin-top:28px; padding-top:16px; font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                    Best regards,<br>\n                    <strong>Bilal Shahid</strong><br>\n                    <strong>Co-Founder & CTO</strong><br>\n                    <a href=\"mailto:bilal@devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">bilal@devdive.net</a><br>\n                </div>\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                  <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">Devdive</a>\n                </div>\n              </div>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      },
+      "messageId": "<ed3a07d7-ceb7-b011-e0c0-ba8a563fae20@gmail.com>"
+    },
+    {
+      "id": "email_1755260704944_6b9030927bccb42c",
+      "timestamp": "2025-08-15T12:25:04.944Z",
+      "status": "success",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "ttrz juwf wmko eqpq",
+        "to": "michaelf@ascendantusa.com",
+        "subject": "Cut Dev Costs by 70%—Without Hiring a Single Developer",
+        "content": "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" c\"width=device-width\">\n  <meta name=\"color-scheme\" c\"light\">\n  <meta name=\"supported-color-schemes\" c\"light\">\n  <title>Just 10 Minutes</title>\n  <style>\n    :root {\n        color-scheme: light;\n        supported-color-schemes: light;\n    } \n\n    @media only screen and (max-width: 620px) {\n      .wrapper { width: 100% !important; padding: 16px !important; }\n      .hero-text { font-size: 26px !important; line-height: 34px !important; }\n      .content { font-size: 15px !important; }\n      .cta-btn { width: 100% !important; display: block !important; }\n    }\n  </style>\n</head>\n<body style=\"margin:0; padding:0; background-color:#fffff !important; font-family: 'Segoe UI', Roboto, Arial, sans-serif;\">\n  <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background-color:#ffffff !important;\">\n    <tr>\n      <td align=\"center\" style=\"padding: 32px 12px;\">\n        <!-- Main Container -->\n        <table class=\"wrapper\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" role=\"presentation\"\n               style=\"background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.08);\">\n          <!-- Logo -->\n          <tr>\n            <td align=\"center\" style=\"padding: 28px 24px; background-color:#ffffff !important;\">\n              <img src=\"https://devdive.net/img/devdive_logo_purple.png\" alt=\"DevDive\"\n                   style=\"display:block; width:160px; max-width:80%; height:auto;\">\n            </td>\n          </tr>\n          <!-- Hero Section -->\n          <tr>\n            <td align=\"center\" style=\"background: linear-gradient(135deg, #5B40D2, #7B5FFF); padding: 40px 24px;border-radius:10px; color:#ffffff !important;\">\n              <div style=\"font-size:34px; font-weight:900; color:#ffffff !important; line-height:1.3;\" class=\"hero-text\">\n                From Costly to <span style=\"color:#ffcc4d !important;\">Cost-Smart</span><br> <em>Your Dev Team Is Waiting</em>\n              </div>\n              <div style=\"font-size:16px; color:#ffffff !important; margin-top:12px;\">\n                No hiring headaches. No missed deadlines. Just top-tier tech talent at a fraction of the cost.\n              </div>\n            </td>\n          </tr>\n          <!-- Body -->\n          <tr>\n            <td style=\"padding: 32px; color:#243b4a; background-color:#ffffff !important;\">\n              <div style=\"font-size:16px; margin-bottom:12px;\">Hi <strong>Michael</strong>,</div>\n              <div style=\"font-size:15px; color:#4a5963; line-height:1.6; margin-bottom:20px;\">\n                <p>I was really impressed by <strong>Ascendant Technologies</strong>' 30+ years of serving the Tri-State area with expert managed IT, cybersecurity, cloud, and custom IT strategies. Your strength lies not just in your experience, but in your deeply personalized, 24/7 support and your ability to craft industry-specific solutions across sectors like healthcare, finance, manufacturing, and education.</p>\n                <p>I’m Bilal, CTO of <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none; font-weight:700\">Devdive</a>, a fellow business owner leading a team that brings together eight years of experience in design, development, AI integration, cybersecurity, and deployment—all delivered with attention to quality, scalability, and efficiency. We help agencies avoid the cost and headaches of hiring—making top-tier tech talent instantly accessible, without skyrocketing budgets. No hiring headaches. <strong>No missed deadlines. Just results—at a fraction of the cost.</strong></p>\n                <!-- <p>From one entrepreneur to another—both of us are builders who believe in sustainable, high-impact growth. That’s why <strong>DevDive</strong> isn’t just an agency—we’re your <strong>affordable, in-house-caliber dev team</strong>, ready to scale your digital offerings with excellence and precision. </p> -->\n              </div>\n              <!-- Highlight Box -->\n              <div style=\"background:#f8f6ff !important; border-left:4px solid #7B5FFF; border-radius:6px; padding:16px; margin-bottom:20px;\">\n                <strong>Partnering with DevDive means you can:</strong>\n                <ul style=\"margin:10px 0 0 18px; padding:0; color:#4a5963; line-height:1.6;\">\n                  <li>Deliver high-quality client portals, automation tools, analytics dashboards, or mobile apps—without recruiting or training new staff</li>\n                  <li>Seamlessly integrate AI-powered insights, CRM enhancements, or workflow automation into your managed services offerings</li>\n                  <li>Support overflow during peak demand, urgent client projects, or new service launches while your core team focuses on operations</li>\n                  <li>Provide expert development support on demand, preserving your reputation for reliability and responsiveness</li>\n                </ul>\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                If you're open to a quick 10-minute call, I’d love to explore how DevDive can align with your vision and help you scale even smarter. Even if now isn’t the right time, I’d still welcome a connection—businesses grow through relationships, shared ideas, and mutual trust.\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                Looking forward to connecting.\n              </div>\n\n              <!-- Footer -->\n              <div style=\"border-top:1px solid #eee; margin-top:28px; padding-top:16px; font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                    Best regards,<br>\n                    <strong>Bilal Shahid</strong><br>\n                    <strong>Co-Founder & CTO</strong><br>\n                    <a href=\"mailto:bilal@devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">bilal@devdive.net</a><br>\n                </div>\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                  <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">Devdive</a>\n                </div>\n              </div>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      },
+      "messageId": "<9e3998af-83bb-8ec7-cf0e-80baa6044d38@gmail.com>"
+    },
+    {
+      "id": "email_1755264895716_e135f884cdfc1e6a",
+      "timestamp": "2025-08-15T13:34:55.717Z",
+      "status": "pending",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "hjjhgj",
+        "to": "bilal.shahid4500@gmail.com",
+        "subject": "Testing",
+        "content": "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" c\"width=device-width\">\n  <meta name=\"color-scheme\" c\"light\">\n  <meta name=\"supported-color-schemes\" c\"light\">\n  <title>Just 10 Minutes</title>\n  <style>\n    :root {\n        color-scheme: light;\n        supported-color-schemes: light;\n    } \n\n    @media only screen and (max-width: 620px) {\n      .wrapper { width: 100% !important; padding: 16px !important; }\n      .hero-text { font-size: 26px !important; line-height: 34px !important; }\n      .content { font-size: 15px !important; }\n      .cta-btn { width: 100% !important; display: block !important; }\n    }\n  </style>\n</head>\n<body style=\"margin:0; padding:0; background-color:#fffff !important; font-family: 'Segoe UI', Roboto, Arial, sans-serif;\">\n  <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background-color:#ffffff !important;\">\n    <tr>\n      <td align=\"center\" style=\"padding: 32px 12px;\">\n        <!-- Main Container -->\n        <table class=\"wrapper\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" role=\"presentation\"\n               style=\"background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.08);\">\n          <!-- Logo -->\n          <tr>\n            <td align=\"center\" style=\"padding: 28px 24px; background-color:#ffffff !important;\">\n              <img src=\"https://devdive.net/img/devdive_logo_purple.png\" alt=\"DevDive\"\n                   style=\"display:block; width:160px; max-width:80%; height:auto;\">\n            </td>\n          </tr>\n          <!-- Hero Section -->\n          <tr>\n            <td align=\"center\" style=\"background: linear-gradient(135deg, #5B40D2, #7B5FFF); padding: 40px 24px;border-radius:10px; color:#ffffff !important;\">\n              <div style=\"font-size:34px; font-weight:900; color:#ffffff !important; line-height:1.3;\" class=\"hero-text\">\n                From Costly to <span style=\"color:#ffcc4d !important;\">Cost-Smart</span><br> <em>Your Dev Team Is Waiting</em>\n              </div>\n              <div style=\"font-size:16px; color:#ffffff !important; margin-top:12px;\">\n                No hiring headaches. No missed deadlines. Just top-tier tech talent at a fraction of the cost.\n              </div>\n            </td>\n          </tr>\n          <!-- Body -->\n          <tr>\n            <td style=\"padding: 32px; color:#243b4a; background-color:#ffffff !important;\">\n              <div style=\"font-size:16px; margin-bottom:12px;\">Hi <strong>Michael</strong>,</div>\n              <div style=\"font-size:15px; color:#4a5963; line-height:1.6; margin-bottom:20px;\">\n                <p>I was really impressed by <strong>Ascendant Technologies</strong>' 30+ years of serving the Tri-State area with expert managed IT, cybersecurity, cloud, and custom IT strategies. Your strength lies not just in your experience, but in your deeply personalized, 24/7 support and your ability to craft industry-specific solutions across sectors like healthcare, finance, manufacturing, and education.</p>\n                <p>I’m Bilal, CTO of <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none; font-weight:700\">Devdive</a>, a fellow business owner leading a team that brings together eight years of experience in design, development, AI integration, cybersecurity, and deployment—all delivered with attention to quality, scalability, and efficiency. We help agencies avoid the cost and headaches of hiring—making top-tier tech talent instantly accessible, without skyrocketing budgets. No hiring headaches. <strong>No missed deadlines. Just results—at a fraction of the cost.</strong></p>\n                <!-- <p>From one entrepreneur to another—both of us are builders who believe in sustainable, high-impact growth. That’s why <strong>DevDive</strong> isn’t just an agency—we’re your <strong>affordable, in-house-caliber dev team</strong>, ready to scale your digital offerings with excellence and precision. </p> -->\n              </div>\n              <!-- Highlight Box -->\n              <div style=\"background:#f8f6ff !important; border-left:4px solid #7B5FFF; border-radius:6px; padding:16px; margin-bottom:20px;\">\n                <strong>Partnering with DevDive means you can:</strong>\n                <ul style=\"margin:10px 0 0 18px; padding:0; color:#4a5963; line-height:1.6;\">\n                  <li>Deliver high-quality client portals, automation tools, analytics dashboards, or mobile apps—without recruiting or training new staff</li>\n                  <li>Seamlessly integrate AI-powered insights, CRM enhancements, or workflow automation into your managed services offerings</li>\n                  <li>Support overflow during peak demand, urgent client projects, or new service launches while your core team focuses on operations</li>\n                  <li>Provide expert development support on demand, preserving your reputation for reliability and responsiveness</li>\n                </ul>\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                If you're open to a quick 10-minute call, I’d love to explore how DevDive can align with your vision and help you scale even smarter. Even if now isn’t the right time, I’d still welcome a connection—businesses grow through relationships, shared ideas, and mutual trust.\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                Looking forward to connecting.\n              </div>\n\n              <!-- Footer -->\n              <div style=\"border-top:1px solid #eee; margin-top:28px; padding-top:16px; font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                    Best regards,<br>\n                    <strong>Bilal Shahid</strong><br>\n                    <strong>Co-Founder & CTO</strong><br>\n                    <a href=\"mailto:bilal@devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">bilal@devdive.net</a><br>\n                </div>\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                  <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">Devdive</a>\n                </div>\n              </div>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      }
+    },
+    {
+      "id": "email_1755264896996_8fc82dea02dae8a9",
+      "timestamp": "2025-08-15T13:34:56.996Z",
+      "status": "failed",
+      "emailData": {
+        "emailType": "gmail",
+        "from": "devdiveco@gmail.com",
+        "password": "hjjhgj",
+        "to": "bilal.shahid4500@gmail.com",
+        "subject": "Testing",
+        "content": "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" c\"width=device-width\">\n  <meta name=\"color-scheme\" c\"light\">\n  <meta name=\"supported-color-schemes\" c\"light\">\n  <title>Just 10 Minutes</title>\n  <style>\n    :root {\n        color-scheme: light;\n        supported-color-schemes: light;\n    } \n\n    @media only screen and (max-width: 620px) {\n      .wrapper { width: 100% !important; padding: 16px !important; }\n      .hero-text { font-size: 26px !important; line-height: 34px !important; }\n      .content { font-size: 15px !important; }\n      .cta-btn { width: 100% !important; display: block !important; }\n    }\n  </style>\n</head>\n<body style=\"margin:0; padding:0; background-color:#fffff !important; font-family: 'Segoe UI', Roboto, Arial, sans-serif;\">\n  <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background-color:#ffffff !important;\">\n    <tr>\n      <td align=\"center\" style=\"padding: 32px 12px;\">\n        <!-- Main Container -->\n        <table class=\"wrapper\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" role=\"presentation\"\n               style=\"background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.08);\">\n          <!-- Logo -->\n          <tr>\n            <td align=\"center\" style=\"padding: 28px 24px; background-color:#ffffff !important;\">\n              <img src=\"https://devdive.net/img/devdive_logo_purple.png\" alt=\"DevDive\"\n                   style=\"display:block; width:160px; max-width:80%; height:auto;\">\n            </td>\n          </tr>\n          <!-- Hero Section -->\n          <tr>\n            <td align=\"center\" style=\"background: linear-gradient(135deg, #5B40D2, #7B5FFF); padding: 40px 24px;border-radius:10px; color:#ffffff !important;\">\n              <div style=\"font-size:34px; font-weight:900; color:#ffffff !important; line-height:1.3;\" class=\"hero-text\">\n                From Costly to <span style=\"color:#ffcc4d !important;\">Cost-Smart</span><br> <em>Your Dev Team Is Waiting</em>\n              </div>\n              <div style=\"font-size:16px; color:#ffffff !important; margin-top:12px;\">\n                No hiring headaches. No missed deadlines. Just top-tier tech talent at a fraction of the cost.\n              </div>\n            </td>\n          </tr>\n          <!-- Body -->\n          <tr>\n            <td style=\"padding: 32px; color:#243b4a; background-color:#ffffff !important;\">\n              <div style=\"font-size:16px; margin-bottom:12px;\">Hi <strong>Michael</strong>,</div>\n              <div style=\"font-size:15px; color:#4a5963; line-height:1.6; margin-bottom:20px;\">\n                <p>I was really impressed by <strong>Ascendant Technologies</strong>' 30+ years of serving the Tri-State area with expert managed IT, cybersecurity, cloud, and custom IT strategies. Your strength lies not just in your experience, but in your deeply personalized, 24/7 support and your ability to craft industry-specific solutions across sectors like healthcare, finance, manufacturing, and education.</p>\n                <p>I’m Bilal, CTO of <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none; font-weight:700\">Devdive</a>, a fellow business owner leading a team that brings together eight years of experience in design, development, AI integration, cybersecurity, and deployment—all delivered with attention to quality, scalability, and efficiency. We help agencies avoid the cost and headaches of hiring—making top-tier tech talent instantly accessible, without skyrocketing budgets. No hiring headaches. <strong>No missed deadlines. Just results—at a fraction of the cost.</strong></p>\n                <!-- <p>From one entrepreneur to another—both of us are builders who believe in sustainable, high-impact growth. That’s why <strong>DevDive</strong> isn’t just an agency—we’re your <strong>affordable, in-house-caliber dev team</strong>, ready to scale your digital offerings with excellence and precision. </p> -->\n              </div>\n              <!-- Highlight Box -->\n              <div style=\"background:#f8f6ff !important; border-left:4px solid #7B5FFF; border-radius:6px; padding:16px; margin-bottom:20px;\">\n                <strong>Partnering with DevDive means you can:</strong>\n                <ul style=\"margin:10px 0 0 18px; padding:0; color:#4a5963; line-height:1.6;\">\n                  <li>Deliver high-quality client portals, automation tools, analytics dashboards, or mobile apps—without recruiting or training new staff</li>\n                  <li>Seamlessly integrate AI-powered insights, CRM enhancements, or workflow automation into your managed services offerings</li>\n                  <li>Support overflow during peak demand, urgent client projects, or new service launches while your core team focuses on operations</li>\n                  <li>Provide expert development support on demand, preserving your reputation for reliability and responsiveness</li>\n                </ul>\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                If you're open to a quick 10-minute call, I’d love to explore how DevDive can align with your vision and help you scale even smarter. Even if now isn’t the right time, I’d still welcome a connection—businesses grow through relationships, shared ideas, and mutual trust.\n              </div>\n              <div style=\"font-size:15px; color:#4a5963; margin-bottom:24px; background-color:#ffffff !important;\">\n                Looking forward to connecting.\n              </div>\n\n              <!-- Footer -->\n              <div style=\"border-top:1px solid #eee; margin-top:28px; padding-top:16px; font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                    Best regards,<br>\n                    <strong>Bilal Shahid</strong><br>\n                    <strong>Co-Founder & CTO</strong><br>\n                    <a href=\"mailto:bilal@devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">bilal@devdive.net</a><br>\n                </div>\n                <div style=\"font-size:14px; color:#6b7980; background-color:#ffffff !important;\">\n                  <a href=\"https://devdive.net\" style=\"color:#7B5FFF; text-decoration:none;\">Devdive</a>\n                </div>\n              </div>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>",
+        "domain": "",
+        "smtpPort": ""
+      },
+      "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "emailType": "gmail"
+      },
+      "error": "Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45a1c6cfed5sm56792345e9.7 - gsmtp"
+    }
+  ]
+}

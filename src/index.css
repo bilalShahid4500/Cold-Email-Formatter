@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  
+  .email-preview-content {
+    @apply w-full;
+  }
+  
+  .email-preview-content table {
+    @apply w-full border-collapse;
+  }
+  
+  .email-preview-content td {
+    @apply align-top;
+  }
+  
+  .email-preview-content img {
+    @apply max-w-full h-auto;
+  }
+  
+  .email-preview-content * {
+    @apply max-w-full;
+  }
+  
+  /* Restore list styling for email preview */
+  .email-preview-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .email-preview-content ol {
+    list-style: decimal;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .email-preview-content li {
+    margin-bottom: 0.25rem;
+  }
+  
+  .email-preview-content ul ul {
+    list-style: circle;
+  }
+  
+  .email-preview-content ul ul ul {
+    list-style: square;
+  }
+}

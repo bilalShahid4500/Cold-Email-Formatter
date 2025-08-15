@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://emailformatter.com/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /server/
+
+# Allow important pages
+Allow: /app
+Allow: /features
+Allow: /pricing
+Allow: /templates
+Allow: /docs
+Allow: /support
+
+# Crawl delay (optional)
+Crawl-delay: 1
