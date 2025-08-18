@@ -1,5 +1,5 @@
 import React from 'react'
-import { Eye, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { EmailPreviewProps } from '../types/email'
 
 const EmailPreview: React.FC<EmailPreviewProps> = ({ emailData }) => {

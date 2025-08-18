@@ -47,11 +47,7 @@ function EmailApp() {
     }
   }
 
-  const handleError = (error: EmailError) => {
-    setError(error)
-    // Auto-hide error after 5 seconds
-    setTimeout(() => setError(null), 5000)
-  }
+
 
   const clearError = () => {
     setError(null)
@@ -184,7 +180,6 @@ function EmailApp() {
               emailData={emailData} 
               onEmailDataChange={handleEmailDataChange}
               onContinue={handleContinue}
-              onError={handleError}
             />
           </div>
         ) : (
@@ -266,8 +261,6 @@ function EmailApp() {
                 <EmailEditor 
                   emailData={emailData}
                   onEmailDataChange={handleEmailDataChange}
-                  onBack={() => setShowEditor(false)}
-                  onError={handleError}
                 />
               </div>
               <div>

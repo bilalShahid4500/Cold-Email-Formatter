@@ -101,9 +101,8 @@ export const sendEmail = async (emailData: EmailData): Promise<{ success: boolea
       throw new Error(errorMessage)
     }
 
-    let result
     try {
-      result = await response.json()
+      await response.json()
     } catch (jsonError) {
       throw new Error('Invalid response from server')
     }
@@ -129,7 +128,7 @@ export const sendEmail = async (emailData: EmailData): Promise<{ success: boolea
 }
 
 // Alternative: Send email using EmailJS (client-side solution)
-export const sendEmailWithEmailJS = async (emailData: EmailData): Promise<{ success: boolean; message: string }> => {
+export const sendEmailWithEmailJS = async (): Promise<{ success: boolean; message: string }> => {
   try {
     // This requires EmailJS setup - you'll need to:
     // 1. Sign up at emailjs.com

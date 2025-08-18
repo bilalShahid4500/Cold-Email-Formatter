@@ -19,14 +19,11 @@ export interface EmailFormProps {
   emailData: EmailData
   onEmailDataChange: (data: Partial<EmailData>) => void
   onContinue: () => void
-  onError: (error: EmailError) => void
 }
 
 export interface EmailEditorProps {
   emailData: EmailData
   onEmailDataChange: (data: Partial<EmailData>) => void
-  onBack: () => void
-  onError: (error: EmailError) => void
 }
 
 export interface EmailPreviewProps {

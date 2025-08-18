@@ -1,73 +1,73 @@
-import React, { useRef } from 'react'
-import { ArrowLeft, Send, Upload, FileText } from 'lucide-react'
+import React, { useState } from 'react'
+import { Download, Edit3, Save, X } from 'lucide-react'
 import Editor from '@monaco-editor/react'
 import { EmailEditorProps } from '../types/email'
-import { sendEmail } from '../utils/emailSender'
 
-const EmailEditor: React.FC<EmailEditorProps> = ({ emailData, onEmailDataChange, onBack, onError }) => {
-  const fileInputRef = useRef<HTMLInputElement>(null)
+const EmailEditor: React.FC<EmailEditorProps> = ({ emailData, onEmailDataChange }) => {
+  const [isEditing, setIsEditing] = useState(false)
+  const [editData, setEditData] = useState({
+    from: emailData.from,
+    to: emailData.to,
+    cc: emailData.cc,
+    subject: emailData.subject
+  })
 
   const handleEditorChange = (value: string | undefined) => {
     onEmailDataChange({ content: value || '' })
   }
 
-  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0]
-    if (file && file.type === 'text/html') {
-      const reader = new FileReader()
-      reader.onload = (e) => {
-        const content = e.target?.result as string
-        onEmailDataChange({ content })
-      }
-      reader.readAsText(file)
-    } else {
-      alert('Please upload an HTML file (.html)')
-    }
+  const handleSave = () => {
+    onEmailDataChange(editData)
+    setIsEditing(false)
   }
 
-  const handleUploadClick = () => {
-    fileInputRef.current?.click()
+  const handleCancel = () => {
+    setEditData({
+      from: emailData.from,
+      to: emailData.to,
+      cc: emailData.cc,
+      subject: emailData.subject
+    })
+    setIsEditing(false)
   }
 
-  const handleSendEmail = async () => {
-    try {
-      // Validate required fields
-      if (!emailData.from || !emailData.password || !emailData.to || !emailData.subject || !emailData.content) {
-        onError({
-          type: 'error',
-          message: 'Please fill in all required fields before sending the email.'
-        })
-        return
-      }
-
-      // Show sending status
-      onError({
-        type: 'warning',
-        message: 'Sending email... Please wait.'
-      })
-
-      // Send email using the real email sender
-      const result = await sendEmail(emailData)
-
-      if (result.success) {
-        onError({
-          type: 'success',
-          message: result.message
-        })
-      } else {
-        onError({
-          type: 'error',
-          message: result.message
-        })
-      }
-
-    } catch (error) {
-      onError({
-        type: 'error',
-        message: error instanceof Error ? error.message : 'Failed to send email. Please try again.'
-      })
-    }
+  const handleDownloadHTML = () => {
+    const fullHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${emailData.subject}</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .email-container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    </style>
+</head>
+<body>
+    ${emailData.content}
+</body>
+</html>`
+    
+    const blob = new Blob([fullHTML], { type: 'text/html' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `email-${Date.now()}.html`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
   }
+
+  // Update editData when emailData changes
+  React.useEffect(() => {
+    setEditData({
+      from: emailData.from,
+      to: emailData.to,
+      cc: emailData.cc,
+      subject: emailData.subject
+    })
+  }, [emailData.from, emailData.to, emailData.cc, emailData.subject])
 
   const defaultEmailTemplate = `<!DOCTYPE html>
 <html lang="en">
@@ -111,19 +111,8 @@ const EmailEditor: React.FC<EmailEditorProps> = ({ emailData, onEmailDataChange,
 </body>
 </html>`
 
-
-
   return (
     <div>
-      {/* Hidden file input for upload functionality */}
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept=".html,.htm"
-        onChange={handleFileUpload}
-        className="hidden"
-      />
-
       {/* Main editor card */}
       <div className="card h-[800px] overflow-hidden">
         <div className="h-full overflow-y-auto">
@@ -151,13 +140,122 @@ const EmailEditor: React.FC<EmailEditorProps> = ({ emailData, onEmailDataChange,
       </div>
 
       <div className="bg-gray-50 p-4 rounded-lg mt-4">
-        <h4 className="font-medium text-gray-900 mb-2">Email Preview Info</h4>
-        <div className="text-sm text-gray-600 space-y-1">
-          <p><strong>From:</strong> {emailData.from}</p>
-          <p><strong>To:</strong> {emailData.to}</p>
-          {emailData.cc && <p><strong>CC:</strong> {emailData.cc}</p>}
-          <p><strong>Subject:</strong> {emailData.subject}</p>
-          <p><strong>Platform:</strong> {emailData.emailType === 'gmail' ? 'Gmail' : 'Website'}</p>
+        <div className="flex items-center justify-between mb-4">
+          <h4 className="font-medium text-gray-900">Email Details</h4>
+          <div className="flex items-center space-x-2">
+            {!isEditing ? (
+              <button
+                onClick={() => setIsEditing(true)}
+                className="flex items-center text-sm bg-blue-50 text-blue-700 hover:bg-blue-100 px-3 py-1.5 rounded-md transition-colors border border-blue-200"
+              >
+                <Edit3 className="w-4 h-4 mr-1" />
+                Edit
+              </button>
+            ) : (
+              <>
+                <button
+                  onClick={handleSave}
+                  className="flex items-center text-sm bg-green-50 text-green-700 hover:bg-green-100 px-3 py-1.5 rounded-md transition-colors border border-green-200"
+                >
+                  <Save className="w-4 h-4 mr-1" />
+                  Save
+                </button>
+                <button
+                  onClick={handleCancel}
+                  className="flex items-center text-sm bg-gray-50 text-gray-700 hover:bg-gray-100 px-3 py-1.5 rounded-md transition-colors border border-gray-200"
+                >
+                  <X className="w-4 h-4 mr-1" />
+                  Cancel
+                </button>
+              </>
+            )}
+            <button
+              onClick={handleDownloadHTML}
+              className="flex items-center text-sm bg-purple-50 text-purple-700 hover:bg-purple-100 px-3 py-1.5 rounded-md transition-colors border border-purple-200"
+            >
+              <Download className="w-4 h-4 mr-1" />
+              Download HTML
+            </button>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">From:</label>
+            {isEditing ? (
+              <input
+                type="email"
+                value={editData.from}
+                onChange={(e) => setEditData(prev => ({ ...prev, from: e.target.value }))}
+                className="input-field text-sm"
+                placeholder="your-email@example.com"
+              />
+            ) : (
+              <div className="text-sm text-gray-900 bg-white px-3 py-2 rounded-md border">
+                {emailData.from || 'Not set'}
+              </div>
+            )}
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">To:</label>
+            {isEditing ? (
+              <input
+                type="email"
+                value={editData.to}
+                onChange={(e) => setEditData(prev => ({ ...prev, to: e.target.value }))}
+                className="input-field text-sm"
+                placeholder="recipient@example.com"
+              />
+            ) : (
+              <div className="text-sm text-gray-900 bg-white px-3 py-2 rounded-md border">
+                {emailData.to || 'Not set'}
+              </div>
+            )}
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Subject:</label>
+            {isEditing ? (
+              <input
+                type="text"
+                value={editData.subject}
+                onChange={(e) => setEditData(prev => ({ ...prev, subject: e.target.value }))}
+                className="input-field text-sm"
+                placeholder="Email subject"
+              />
+            ) : (
+              <div className="text-sm text-gray-900 bg-white px-3 py-2 rounded-md border">
+                {emailData.subject || 'Not set'}
+              </div>
+            )}
+          </div>
+
+          {emailData.emailType === 'gmail' && (
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">CC:</label>
+              {isEditing ? (
+                <input
+                  type="email"
+                  value={editData.cc}
+                  onChange={(e) => setEditData(prev => ({ ...prev, cc: e.target.value }))}
+                  className="input-field text-sm"
+                  placeholder="cc@example.com"
+                />
+              ) : (
+                <div className="text-sm text-gray-900 bg-white px-3 py-2 rounded-md border">
+                  {emailData.cc || 'None'}
+                </div>
+              )}
+            </div>
+          )}
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Platform:</label>
+            <div className="text-sm text-gray-900 bg-white px-3 py-2 rounded-md border">
+              {emailData.emailType === 'gmail' ? 'Gmail' : 'Website'}
+            </div>
+          </div>
         </div>
       </div>
     </div>

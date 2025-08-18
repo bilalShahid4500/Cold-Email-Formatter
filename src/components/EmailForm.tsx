@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Mail, Globe, ArrowRight, Lock, Eye, EyeOff } from 'lucide-react'
 import { EmailFormProps } from '../types/email'
 
-const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onContinue, onError }) => {
+const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onContinue }) => {
   const [showPassword, setShowPassword] = useState(false)
 
   const handleEmailTypeSelect = (type: 'gmail' | 'website') => {

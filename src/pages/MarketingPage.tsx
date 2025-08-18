@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
   Mail, 
-  Globe, 
   Shield, 
   Zap, 
   CheckCircle, 
@@ -12,12 +11,7 @@ import {
   FileText,
   Send,
   Eye,
-  Download,
-  Lock,
-  Clock,
-  Smartphone,
-  Monitor,
-  Tablet
+  Download
 } from 'lucide-react'
 
 const MarketingPage: React.FC = () => {
