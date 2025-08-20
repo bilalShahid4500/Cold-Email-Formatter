@@ -16,7 +16,7 @@ import {
 
 const MarketingPage: React.FC = () => {
   const handleGetStarted = () => {
-    window.location.href = '/app'
+    window.location.href = '/auth'
   }
 
   return (

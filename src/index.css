@@ -75,4 +75,35 @@
   .email-preview-content ul ul ul {
     list-style: square;
   }
+  
+  /* Email preview modal styles */
+  .email-preview {
+    @apply w-full;
+  }
+  
+  .email-preview table {
+    @apply w-full border-collapse;
+  }
+  
+  .email-preview td {
+    @apply align-top;
+  }
+  
+  .email-preview img {
+    @apply max-w-full h-auto;
+  }
+  
+  .email-preview * {
+    @apply max-w-full;
+  }
+  
+  /* Modal backdrop */
+  .modal-backdrop {
+    @apply fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    @apply relative top-20 mx-auto p-5 border w-11/12 max-w-4xl shadow-lg rounded-md bg-white;
+  }
 }

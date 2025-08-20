@@ -13,12 +13,12 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
     setShowPassword(!showPassword)
   }
 
-  const isFormValid = emailData.emailType && 
-    emailData.from && 
-    emailData.password && 
-    emailData.to && 
-    emailData.subject &&
-    (emailData.emailType === 'gmail' || (emailData.emailType === 'website' && emailData.domain && emailData.smtpPort))
+  const isFormValid = emailData?.emailType && 
+    emailData?.from && 
+    emailData?.password && 
+    emailData?.to && 
+    emailData?.subject &&
+    (emailData?.emailType === 'gmail' || (emailData?.emailType === 'website' && emailData?.domain && emailData?.smtpPort))
 
   return (
     <div className="card">
@@ -41,7 +41,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
             type="button"
             onClick={() => handleEmailTypeSelect('gmail')}
             className={`p-4 border-2 rounded-lg text-left transition-all duration-200 ${
-              emailData.emailType === 'gmail'
+              emailData?.emailType === 'gmail'
                 ? 'border-primary-500 bg-primary-50'
                 : 'border-gray-300 hover:border-gray-400'
             }`}
@@ -59,7 +59,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
             type="button"
             onClick={() => handleEmailTypeSelect('website')}
             className={`p-4 border-2 rounded-lg text-left transition-all duration-200 ${
-              emailData.emailType === 'website'
+              emailData?.emailType === 'website'
                 ? 'border-primary-500 bg-primary-50'
                 : 'border-gray-300 hover:border-gray-400'
             }`}
@@ -84,7 +84,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
           <input
             type="email"
             id="from"
-            value={emailData.from}
+            value={emailData?.from || ''}
             onChange={(e) => onEmailDataChange({ from: e.target.value })}
             placeholder="your-email@example.com"
             className="input-field"
@@ -99,7 +99,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
             <input
               type={showPassword ? "text" : "password"}
               id="password"
-              value={emailData.password}
+              value={emailData?.password || ''}
               onChange={(e) => onEmailDataChange({ password: e.target.value })}
               placeholder="Enter your email password"
               className="input-field pr-20"
@@ -121,7 +121,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
             </div>
           </div>
           <p className="text-xs text-gray-500 mt-1">
-            {emailData.emailType === 'gmail' 
+            {emailData?.emailType === 'gmail' 
               ? 'Use an App Password if 2FA is enabled'
               : 'Use your email account password'
             }
@@ -129,7 +129,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
         </div>
 
         {/* SMTP Configuration fields - only show for website emails */}
-        {emailData.emailType === 'website' && (
+        {emailData?.emailType === 'website' && (
           <>
             <div>
               <label htmlFor="domain" className="block text-sm font-medium text-gray-700 mb-1">
@@ -138,7 +138,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
               <input
                 type="text"
                 id="domain"
-                value={emailData.domain}
+                value={emailData?.domain || ''}
                 onChange={(e) => onEmailDataChange({ domain: e.target.value })}
                 placeholder="smtp.yourdomain.com"
                 className="input-field"
@@ -155,7 +155,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
               <input
                 type="number"
                 id="smtpPort"
-                value={emailData.smtpPort}
+                value={emailData?.smtpPort || ''}
                 onChange={(e) => onEmailDataChange({ smtpPort: e.target.value })}
                 placeholder="587"
                 min="1"
@@ -176,14 +176,14 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
           <input
             type="email"
             id="to"
-            value={emailData.to}
+            value={emailData?.to || ''}
             onChange={(e) => onEmailDataChange({ to: e.target.value })}
             placeholder="recipient@example.com"
             className="input-field"
           />
         </div>
 
-        {emailData.emailType === 'gmail' && (
+        {emailData?.emailType === 'gmail' && (
           <div>
             <label htmlFor="cc" className="block text-sm font-medium text-gray-700 mb-1">
               CC (optional)
@@ -191,7 +191,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
             <input
               type="email"
               id="cc"
-              value={emailData.cc}
+              value={emailData?.cc || ''}
               onChange={(e) => onEmailDataChange({ cc: e.target.value })}
               placeholder="cc@example.com"
               className="input-field"
@@ -206,7 +206,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
           <input
             type="text"
             id="subject"
-            value={emailData.subject}
+            value={emailData?.subject || ''}
             onChange={(e) => onEmailDataChange({ subject: e.target.value })}
             placeholder="Your email subject"
             className="input-field"
@@ -231,18 +231,18 @@ const EmailForm: React.FC<EmailFormProps> = ({ emailData, onEmailDataChange, onC
       </div>
 
       {/* Platform Info */}
-      {emailData.emailType && (
+      {emailData?.emailType && (
         <div className="mt-4 p-4 bg-blue-50 rounded-lg">
           <h3 className="font-medium text-blue-900 mb-1">
-            {emailData.emailType === 'gmail' ? 'Gmail Setup' : 'Website Setup'}
+            {emailData?.emailType === 'gmail' ? 'Gmail Setup' : 'Website Setup'}
           </h3>
           <p className="text-sm text-blue-700">
-            {emailData.emailType === 'gmail' 
+            {emailData?.emailType === 'gmail' 
               ? 'You\'ll need to enable 2-factor authentication and generate an app password for Gmail.'
               : 'You\'ll need to configure your domain\'s email settings and SMTP credentials.'
             }
           </p>
-          {emailData.emailType === 'website' && (
+          {emailData?.emailType === 'website' && (
             <div className="mt-2 text-xs text-blue-700">
               <strong>SMTP Settings:</strong> Common configurations:
               <ul className="mt-1 ml-4 list-disc">
